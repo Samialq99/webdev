@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>The template Tag</h1>
+    <h1>ElderFlower</h1>
+    <div id="content">
+      <h2>custom signature</h2>
 
-    <p>Content inside a template tag is hidden from the client.</p>
-    <p>Cant Yes can NOTHING LASTS.</p>
-    <p>Cant Yes can NOTHING LASTS.</p>
-    <p>Cant Yes can NOTHING LASTS. WILL THIS SHOW ON UNICORN OR MASTER ??</p>
+      <div id="cost">Cost: $5 per tile</div>
+    </div>
 
-    <template>
-      <h2>Flower</h2>
-      <img src="img_white_flower.jpg" width="214" height="204" />
-    </template>
+    <p id="demo">
+      This element has extra spacing and contains <span>a span element</span>.
+    </p>
+
+    <button onclick="getInnerText()">Get innerText</button>
+    <button onclick="getHTML()">Get innerHTML</button>
+    <button onclick="getTextContent()">Get textContent</button>
 
     <p>
-      A later example will show you how to use JavaScript to display the
-      template content.
+      <strong>Note:</strong> The textContent property is not supported in
+      Internet Explorer 8 and earlier, and the innerText property is not
+      supported in IE9 and earlier.
     </p>
+
+    <script src="js/javascript1.js"></script>
   </body>
 </html>
