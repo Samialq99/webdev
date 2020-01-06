@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+  <head>   <!--Put styles in Head or link to style sheet-->
+
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,6 +19,14 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
+
+<!-- this bellow targets all .row class's divs -->
+    <style>
+    .row div {padding: 20px 10px; border: 1px solid;}
+    </style>
+
+
+
   </head>
 
   <body>
@@ -89,11 +100,24 @@
 <!-- GRID SYSTEM : we want to take up 6 columns in width,for small screen sizes and upwards write : col-sm-6 // col stands for column-->
   
 <div class ="container">
-      <div class="row">
+      <div class="row" style="background: lightblue">
         <!-- we created a row and inside this row we want 2 columns-->
         <div class="col-sm-6"> Column-SmallScreenSizeupwards width 6 columns </div>
         <div class="col-sm-6">Column-SmallScreenSizeupwards width 6 columns</div>
       </div>
+
+
+      <div class="row" style="background: rgb(230, 199, 173)">
+          <!-- we created a row and inside this row we want 2 columns-->
+          <div class="col-md-6"> Column-MediumScreenSizeupwards width 6 columns </div>
+          <div class="col-md-6">Column-MediumScreenSizeupwards width 6 columns</div>
+          <div class="col-md-6 col-lg-3"> Column-Medium/Large ScreenSizeupwards width 6/3 columns </div>
+          <div class="col-md-6 col-lg-3">Column-medium/largeScreenSizeupwards width 6/3 columns</div>
+        </div>
+        <!-- Notice when screen is small it remains two sections in the SM type but extra small it stacks on top of eachother responsive design
+        Notice for Medium screen sizes its stacked on top already if your in small screen size and will be side by side when expanded to medium size
+        While in Large screen sizes if you chose 3 columns then only when its large enough it will apply the 2 sections next to eachother with each taking 3 col width, but any smaller size it will stack on top of eachother
+        -->
 
     </div>
 
