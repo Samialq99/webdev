@@ -20,54 +20,77 @@
 
   <body>
 
-
-
-
+    <div 
+    <h4>An Unordered List:</h4>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
 
     <h1>Hello World</h1>
     <h2>Hello World h2</h2>
     <p>Lorem Ninja stuff</p>
-
+<!-- Unordered list ul with li aka list items inside -->
     <ul>
       <li>Potatoes</li>
       <li>Onions</li>
       <li>Chickens</li>
     </ul>
-    rm>
-    <label>Text Field</label>
-    <input type="text" placeholder="placeholder"/>
+
+    <!-- input consists of two lines one for empty field -->
+    <!-- and the other line is for the buttom submit or click me -->
+
+
+
+<form>
+    <label>Hello Text Field</label>
+    <input type="text" placeholder="Write something" />
     <input type="submit" value="clickme" />
-    
-  </form>
+</form>
 
-  <div class="container" style="background-color: skyblue">
-<h1>Fixed Container</h1>
+    <!-- containers in bootstrap fluid adapts to width of screen -->
 
-  </div>
+    <div class="container" style="background-color: skyblue">
+      <h1>Fixed Container stays fixed</h1>
+    </div>
 
-  <div class="container-fluid" style="background-color: yellow">
-    <h1>Fluid Container</h1>
-    
-      </div>
-
-
-
-
-
+    <div class="container-fluid" style="background-color: yellow">
+      <h1>Fluid Container adapts to screen width</h1>
+    </div>
 
     <div id="content">
       <h2>custom signature</h2>
 
       <div id="cost">Cost: $5 per tile</div>
+          <!-- This line is used in Javascript file -->
+
     </div>
+    <!-- This demo element is used in javascriptto make 3 buttons work -->
 
     <p id="demo">
       This element has extra spacing and contains <span>a span element</span>.
     </p>
 
+    <div class="container">
     <button onclick="getInnerText()">Get innerText</button>
     <button onclick="getHTML()">Get innerHTML</button>
     <button onclick="getTextContent()">Get textContent</button>
+    </div>
+
+
+    <div class ="container">
+      <div class="row">
+
+
+      </div>
+
+
+
+
+    </div>
+
+
 
     <p>
       <strong>Note:</strong> The textContent property is not supported in
