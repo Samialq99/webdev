@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1>Running javascript with input from user with HTML</h1>
+
+    <div class='wrapper'>
+        <form id='nameForm'>
+        <div class='form-uname'>
+            <label id='nameLable' for='nameField'>Create a username:</label>
+            <input id='nameField' type='text' maxlength='25'></input>
+        </div>
+        <div class='form-sub'>
+            <button id='subButton' type='button' onclick="getUserName()">Print your name!</button>
+            
+        </div>
+        </form>
+        
+        <div>
+            <p id='result'></p></div>
+        </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
