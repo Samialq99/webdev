@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>   <!--Put styles in Head or link to style sheet-->
-
-
+  <head>
+    <!--Put styles in Head or link to style sheet-->
 
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -20,42 +19,39 @@
       crossorigin="anonymous"
     />
 
-<!-- this bellow targets all .row class's divs -->
+    <!-- this bellow targets all .row class's divs -->
     <style>
-    .row div {padding: 20px 10px; border: 1px solid;}
+      .row div {
+        padding: 20px 10px;
+        border: 1px solid;
+      }
     </style>
-
-
-
   </head>
 
   <body>
+    <div class="JUMBOTRON text-center" style="background: gold">
+      <div class="container">
+        <!--we use containers just to center things-->
+        <h1 class="display-1 ">Welcome to the Jumbotron a BANNER</h1>
+        <p class="lead">a guide for the peeps</p>
+      </div>
+    </div>
 
-      <div class="JUMBOTRON" style="background: gold">
+    <!-- colors and borders span class from bootstrap site-->
 
-          <div class="container">  <!--we use containers just to center things-->
-          <h1> Welcome to the Jumbotron a BANNER </h1>
-          <p> a guiding for the peeps</p>
-          </div>
-      
-      
-        </div>
-
-
-
-
-    <div 
-    <h4>An Unordered List:</h4>
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
+    <div class="p-3 mb-2 bg-info text-white">
+      <h4>An Unordered List:</h4>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
 
     <h1>Hello World</h1>
-    <h2>Hello World h2</h2>
+    <h2>Hello World h2 size</h2>
     <p>Lorem Ninja stuff</p>
-<!-- Unordered list ul with li aka list items inside -->
+    <!-- Unordered list ul with li aka list items inside -->
     <ul>
       <li>Potatoes</li>
       <li>Onions</li>
@@ -65,13 +61,11 @@
     <!-- input consists of two lines one for empty field -->
     <!-- and the other line is for the buttom submit or click me -->
 
-
-
-<form>
-    <label>Hello Text Field</label>
-    <input type="text" placeholder="Write something" />
-    <input type="submit" value="clickme" />
-</form>
+    <form>
+      <label>Hello Text Field</label>
+      <input type="text" placeholder="Write something" />
+      <input type="submit" value="clickme" />
+    </form>
 
     <!-- containers in bootstrap fluid adapts to width of screen -->
 
@@ -87,8 +81,7 @@
       <h2>custom signature</h2>
 
       <div id="cost">Cost: $5 per tile</div>
-          <!-- This line is used in Javascript file -->
-
+      <!-- This line is used in Javascript file -->
     </div>
     <!-- This demo element is used in javascriptto make 3 buttons work -->
 
@@ -97,79 +90,91 @@
     </p>
 
     <div class="container">
-    <button onclick="getInnerText()">Get innerText</button>
-    <button onclick="getHTML()">Get innerHTML</button>
-    <button onclick="getTextContent()">Get textContent</button>
+      <button onclick="getInnerText()">Get innerText</button>
+      <button onclick="getHTML()">Get innerHTML</button>
+      <button onclick="getTextContent()">Get textContent</button>
     </div>
 
+    <br />
+    <!--br/ is used to make one line space-->
+    <br />
+    <br />
 
-    <br/>  <!--br/ is used to make one line space-->
-    <br/>
-    <br/>
+    <!-- GRID SYSTEM : we want to take up 6 columns in width,for small screen sizes and upwards write : col-sm-6 // col stands for column-->
 
-
-
-
-<!-- GRID SYSTEM : we want to take up 6 columns in width,for small screen sizes and upwards write : col-sm-6 // col stands for column-->
-  
-<div class ="container">
-
+    <div class="container">
       <div class="row" style="background: lightblue">
         <!-- we created a row and inside this row we want 2 columns-->
-        <div class="col-sm-6"> Column-SmallScreenSizeupwards width 6 columns </div>
-        <div class="col-sm-6">Column-SmallScreenSizeupwards width 6 columns</div>
+        <div class="col-sm-6">
+          Column-SmallScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-sm-6">
+          Column-SmallScreenSizeupwards width 6 columns
+        </div>
       </div>
 
-
       <div class="row" style="background: rgb(230, 199, 173)">
-          <!-- we created a row and inside this row we want 2 columns-->
-          <div class="col-md-6"> Column-MediumScreenSizeupwards width 6 columns </div>
-          <div class="col-md-6">Column-MediumScreenSizeupwards width 6 columns</div>
-          <div class="col-md-6 col-lg-3"> Column-Medium/Large ScreenSizeupwards width 6/3 columns </div>
-          <div class="col-md-6 col-lg-3">Column-medium/largeScreenSizeupwards width 6/3 columns</div>
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md-6">
+          Column-MediumScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-md-6">
+          Column-MediumScreenSizeupwards width 6 columns
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Column-Medium/Large ScreenSizeupwards width 6/3 columns
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Column-medium/largeScreenSizeupwards width 6/3 columns
+        </div>
       </div>
 
       <div class="row" style="background: greenyellow">
-          <!-- we created a row and inside this row we want 2 columns, we are going to use bootstraps classes for sizes like bellow-->
-          <div class="col-3"> Column-3 width no matter what size screen columns </div>
-          <div class="col-3">Column-3 width no matter what size screen columns</div>
-          <div class="col-3"> Column-3 width no matter what size screen columns </div>
-          <div class="col-3">Column-3 width no matter what size screen columns</div>
+        <!-- we created a row and inside this row we want 2 columns, we are going to use bootstraps classes for sizes like bellow-->
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
+        <div class="col-3">
+          Column-3 width no matter what size screen columns
+        </div>
       </div>
-        <!-- Notice when screen is small it remains two sections in the SM type but extra small it stacks on top of eachother responsive design
+      <!-- Notice when screen is small it remains two sections in the SM type but extra small it stacks on top of eachother responsive design
         Notice for Medium screen sizes its stacked on top already if your in small screen size and will be side by side when expanded to medium size
         While in Large screen sizes if you chose 3 columns then only when its large enough it will apply the 2 sections next to eachother with each taking 3 col width, but any smaller size it will stack on top of eachother
         Notice finally col-3 Keeps it at width 3 no matter what screen size
         we can also use col-md, and when we add another col-md Bootstrap will split the width between both columns automatically on medium screen sizes and above
         -->
 
-        <div class="row" style="background: pink">
-            <!-- we created a row and inside this row we want 2 columns-->
-            <div class="col-md"> Column- width 6 columns automatic by bootstrap for medium and above</div>
-            <div class="col-md">Column- width 6 columns automatic by bootstrap for medium and above </div>
-          </div>
+      <div class="row" style="background: pink">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+      </div>
 
+      <div class="row justify-content-md-center" style="background: pink">
+        <!-- we created a row and inside this row we want 2 columns-->
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+        <div class="col-md">
+          Column- width 6 columns automatic by bootstrap for medium and above
+        </div>
+      </div>
 
-          <div class="row justify-content-md-center" style="background: pink">
-              <!-- we created a row and inside this row we want 2 columns-->
-              <div class="col-md"> Column- width 6 columns automatic by bootstrap for medium and above</div>
-              <div class="col-md">Column- width 6 columns automatic by bootstrap for medium and above </div>
-            </div>
+      <!-- for more info check out Grid System on bootstrap site-->
+    </div>
 
-            <!-- for more info check out Grid System on bootstrap site-->
-
- </div>
-
-<!-- How to make a BANNER or a JUMBOTRON, DOnt use a container if you want banner to take all the width of screen and not be in center-->
-
-  
-
-
-
-
-
-
-
+    <!-- How to make a BANNER or a JUMBOTRON, DOnt use a container if you want banner to take all the width of screen and not be in center-->
 
     <p>
       <strong>Note:</strong> The textContent property is not supported in
