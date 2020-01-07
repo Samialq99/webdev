@@ -70,4 +70,4 @@ if (hourNow > 18) {
 } else {
   greeting = "welcome";
 }
-document.write("<hr>" + greeting + "</h3>");
+document.write("<h3>" + greeting + "</h3>");
