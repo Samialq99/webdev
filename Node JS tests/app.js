@@ -54,3 +54,20 @@ console.log(users3);
 //we want to show unique items no duplicates ? use NEW SET function, it only creates unique values no dups
 const unique = Array.from(new Set(users3));
 console.log("Shows no duplicates", unique);
+
+var Today = new Date();
+console.log(Today);
+let hourNow = Today.getHours();
+console.log(hourNow);
+var greeting;
+
+if (hourNow > 18) {
+  greeting = "good evening";
+} else if (hourNow > 12) {
+  greeting = "good afternoon";
+} else if (hourNow > 0) {
+  greeting = "good morning";
+} else {
+  greeting = "welcome";
+}
+document.write("<hr>" + greeting + "</h3>");
