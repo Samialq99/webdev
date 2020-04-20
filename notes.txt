@@ -1,0 +1,6 @@
+to include a file in current directory straight up 
+    <script src="test.js"></script>
+but if file inside a folder like js in current dir 
+    <script src="js/test.js"></script>
+but if up a dir "../"
+    <link rel="stylesheet" type="text/css" href="../test/test.css" />
